@@ -14,7 +14,7 @@ app = FastAPI(title="Temporary PDF Store")
 # ----------------------------------------------------
 EXPIRY_SECONDS = 600  # PDF expires after 10 minutes
 SCHEME = "http"       # Use https automatically when hosted on Render
-BASE_DOMAIN = ""      # Will be filled manually after Render deploy if needed
+BASE_DOMAIN = "https://pdf-to-html-link-generator.onrender.com"      # Will be filled manually after Render deploy if needed
 
 # ----------------------------------------------------
 # IN-MEMORY TEMPORARY STORAGE
