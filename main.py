@@ -211,7 +211,7 @@ def get_pdf(pdf_id: str):
 if __name__ == "__main__":
     print(f"🚀 PDF Store running at http://{HOST}:{PORT}")
     uvicorn.run(
-        "store:app",   # MUST MATCH CURRENT FILENAME: store.py → store:app
+        "main:app",   # MUST MATCH CURRENT FILENAME: store.py → store:app
         host=HOST,
         port=PORT,
         reload=False,
